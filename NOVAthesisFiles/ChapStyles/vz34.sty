@@ -1,15 +1,24 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% ChapterStyle/vz34.sty
+%% NOVAthesisFiles/ChapStyles/vz34.sty
 %% NOVA thesis configuration file
 %%
 %% Customization for the VZ34 chapter style
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\typeout{NT FILE ChapterStyle/vz34.sty}%
+\typeout{NT FILE NOVAthesisFiles/ChapStyles/vz34.sty}%
 
-%%%%% Configure chapters, headers, footers, and page numbering
+
+%%=======================================================================
+%% FLAGS
+%%=======================================================================
 
 \newif\ifNoChapNumber
+
+
+%%=======================================================================
+%% CHAPTER STYLE
+%%=======================================================================
+
 \makechapterstyle{VZ34}{%
   \renewcommand\chapternamenum{}
   \renewcommand\printchaptername{}
@@ -31,4 +40,5 @@
   }%
   \renewcommand\printchapternonum{\NoChapNumbertrue}
 }
+
 \chapterstyle{VZ34}

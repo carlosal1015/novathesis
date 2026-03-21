@@ -251,6 +251,18 @@
 
 
 %-------------------------------------------------------------
+% Glossary layout (columns width)
+%
+%     DEFAULT: glossaries/layout <- lX
+%.............................................................
+%
+%     Specification for the two columns of the layout
+%-------------------------------------------------------------
+% \ntlatesetup{glossaries/layout = {>{\raggedright}p{0.2\textwidth}X}}
+
+
+
+%-------------------------------------------------------------
 % Include the table of contents in the table of contents
 %     DEFAULT: tocintoc <- false
 %.............................................................
@@ -352,6 +364,19 @@
 
 
 %-------------------------------------------------------------
+% Floats (figures and tables) numbering
+%
+%     DEFAULT: numbering/floats <- chapter
+%.............................................................
+%
+%      chapter —> numbering is <chapter>.<float_number>
+%   sequential —> numbering is <float_number>
+%-------------------------------------------------------------
+% \ntsetup{numbering/floats=sequential}
+
+
+
+%-------------------------------------------------------------
 % You can use any of the default LaTeX style files:
 %     DEFAULT: style/font <- newpx   (this is a 'palatino'-like font)
 %.............................................................
@@ -370,7 +395,7 @@
 %         newsgott              -> (*) specially tailored for UMINHO
 %         opensans              -> 
 %         palatino-gyre-pagella -> 
-%         palatino-linitype     -> 
+%         palatino-linotype     -> 
 %         palatino              -> 
 %         scholax               -> 
 %         verdana               -> (*)
